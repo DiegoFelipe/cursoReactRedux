@@ -8,6 +8,7 @@ module.exports = {
   },
     devServer: {
         port: 8080,
+        inline: true,
         contentBase: './public'
     },
     module: {
@@ -16,7 +17,8 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['es2015']
+          presets: ['es2015'],
+          plugins: ['transform-object-rest-spread']
         }
       }]
     }
