@@ -11,3 +11,7 @@ function clone(objeto) {
 const novoProduto = clone(produto)
 novoProduto.nome = 'BIC preta'
 console.log(novoProduto)
+
+import 'react'
+
+export default props => <h1>asdasdasd</h1>
